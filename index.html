@@ -21,6 +21,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 
 <!-- Structured data for local business / SEO -->
@@ -745,20 +748,18 @@
         <p class="section-desc">Preencha rapidinho e enviamos direto pro nosso WhatsApp — sem cadastro, sem complicação.</p>
       </div>
 
-      <form id="quote-form" class="reveal" style="display:grid; gap:1.1rem; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:var(--space-lg);">
-        <div>
-          <label for="q-name" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.4rem;">Seu nome</label>
-          <input id="q-name" type="text" placeholder="Ex: João Silva" required
-            style="width:100%; padding:0.85rem 1rem; border-radius:10px; border:1px solid var(--border-soft); background:rgba(255,255,255,0.03); color:var(--text-primary);">
+      <form id="quote-form" class="quote-form reveal">
+        <div class="form-field">
+          <label for="q-name">Seu nome</label>
+          <input id="q-name" type="text" placeholder="Ex: João Silva" required>
         </div>
-        <div>
-          <label for="q-vehicle" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.4rem;">Veículo (modelo e cor)</label>
-          <input id="q-vehicle" type="text" placeholder="Ex: HB20 branco" required
-            style="width:100%; padding:0.85rem 1rem; border-radius:10px; border:1px solid var(--border-soft); background:rgba(255,255,255,0.03); color:var(--text-primary);">
+        <div class="form-field">
+          <label for="q-vehicle">Veículo (modelo e cor)</label>
+          <input id="q-vehicle" type="text" placeholder="Ex: HB20 branco" required>
         </div>
-        <div>
-          <label for="q-service" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.4rem;">Serviço de interesse</label>
-          <select id="q-service" style="width:100%; padding:0.85rem 1rem; border-radius:10px; border:1px solid var(--border-soft); background:rgba(255,255,255,0.03); color:var(--text-primary);">
+        <div class="form-field">
+          <label for="q-service">Serviço de interesse</label>
+          <select id="q-service">
             <option value="">Não sei, quero indicação</option>
             <option>Lavagem Tradicional</option>
             <option>Higienização Interna</option>
@@ -770,10 +771,10 @@
             <option>Serviço para Moto</option>
           </select>
         </div>
-        <div>
-          <label for="q-note" style="display:block; font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.4rem;">Observações (opcional)</label>
+        <div class="form-field">
+          <label for="q-note">Observações (opcional)</label>
           <textarea id="q-note" rows="3" placeholder="Algo que devemos saber sobre o carro ou o que você precisa"
-            style="width:100%; padding:0.85rem 1rem; border-radius:10px; border:1px solid var(--border-soft); background:rgba(255,255,255,0.03); color:var(--text-primary); resize:vertical;"></textarea>
+></textarea>
         </div>
         <button type="submit" class="btn btn--cta btn--block">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-3.1.83.83-3.02-.2-.32A8 8 0 1120 12c0 4.42-3.58 8-8 8zm4.4-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38-.12 0-.34 0-.52.04-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
