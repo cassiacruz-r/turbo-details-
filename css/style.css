@@ -154,6 +154,20 @@ h3 { font-size: 1.15rem; }
 .logo { display: flex; align-items: center; flex-shrink: 0; }
 .logo img { height: 38px; width: auto; border-radius: 8px; object-fit: contain; }
 
+.logo-text {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--white);
+  flex-shrink: 0;
+  line-height: 1;
+}
+.logo-text span {
+  color: var(--purple-lite);
+}
+
 .nav-desktop { display: none; align-items: center; gap: 1.8rem; margin: 0 auto; }
 .nav-desktop a { font-size: .82rem; color: var(--grey); transition: color .2s; }
 .nav-desktop a:hover { color: var(--white); }
