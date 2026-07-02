@@ -4,572 +4,535 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Turbo Details — Estética Automotiva em Jequié, BA</title>
-<meta name="description" content="Estética automotiva em Jequié-BA. Lavagem, polimento, vitrificação, higienização e detalhamento completo. Cuidado de verdade com o seu carro.">
+<meta name="description" content="Estética automotiva em Jequié-BA. Lavagem, polimento, vitrificação, higienização e detalhamento completo.">
 <meta name="robots" content="index, follow">
-<meta property="og:type" content="business.business">
 <meta property="og:title" content="Turbo Details — Estética Automotiva">
-<meta property="og:description" content="Cuidado de verdade com o seu carro. Lavagem, polimento, vitrificação e muito mais em Jequié-BA.">
+<meta property="og:description" content="Cuidado de verdade com o seu carro. Jequié-BA.">
 <meta property="og:locale" content="pt_BR">
-<link rel="canonical" href="https://turbodetails.com.br/">
-<link rel="icon" href="assets/logo-roxa.jpeg" type="image/jpeg">
+<link rel="canonical" href="https://turbo-details.vercel.app/">
+<link rel="icon" href="assets/logo.jpeg" type="image/jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AutoBodyShop",
-  "name": "Turbo Details - Estética Automotiva",
-  "telephone": "+5573999737318",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Rua Medeiros Neto, 42, Centro",
-    "addressLocality": "Jequié",
-    "addressRegion": "BA",
-    "postalCode": "45203-610",
-    "addressCountry": "BR"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "08:00",
-    "closes": "18:00"
-  },
-  "sameAs": ["https://www.instagram.com/_turbodetails"]
-}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoBodyShop","name":"Turbo Details","telephone":"+5573999737318","address":{"@type":"PostalAddress","streetAddress":"Rua Medeiros Neto, 42, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45203-610","addressCountry":"BR"}}</script>
 </head>
 <body>
 
-<!-- ===================== HEADER ===================== -->
+<!-- HEADER -->
 <header class="header">
-  <div class="container header__inner">
-    <a href="#topo" class="header__logo">
-      <img src="assets/logo-roxa.jpeg" alt="Turbo Details" class="header__logo-img">
+  <div class="wrap header-inner">
+    <a href="#" class="logo">
+      <img src="assets/logo.jpeg" alt="Turbo Details">
     </a>
 
-    <nav class="nav" id="main-nav">
-      <a href="#sobre">Quem Somos</a>
+    <nav class="nav-desktop">
+      <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#precos">Preços</a>
-      <a href="#antes-depois">Resultados</a>
+      <a href="#resultados">Resultados</a>
       <a href="#avaliacoes">Avaliações</a>
-      <a href="#faq">FAQ</a>
       <a href="#local">Localização</a>
     </nav>
 
-    <div class="header__actions">
-      <a href="#orcamento" class="btn btn--ghost btn--sm">Orçamento</a>
-      <a href="#" data-wa-generic class="btn btn--cta btn--sm">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
+    <div class="header-right">
+      <a href="#orcamento" class="btn btn-outline btn-sm">Orçamento</a>
+      <a href="#" data-wa="generic" class="btn btn-primary btn-sm">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
         WhatsApp
       </a>
     </div>
 
-    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
         <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/>
       </svg>
     </button>
   </div>
 </header>
 
-<main id="topo">
+<!-- NAV MOBILE -->
+<nav class="nav-mobile" id="nav-mobile">
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#precos">Preços</a>
+  <a href="#resultados">Resultados</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#local">Localização</a>
+  <a href="#orcamento" class="btn btn-outline nav-cta">Pedir orçamento</a>
+  <a href="#" data-wa="generic" class="btn btn-primary nav-cta">Falar no WhatsApp</a>
+</nav>
 
-  <!-- ===================== HERO ===================== -->
-  <section class="hero">
-    <div class="hero__bg-glow" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero__grid">
+<main>
 
-        <div class="hero__copy reveal is-visible">
-          <span class="hero__badge"><span class="dot"></span> Aberto agora · Centro de Jequié</span>
-          <h1>Seu carro merece um cuidado <span class="accent">de verdade.</span></h1>
-          <p class="hero__sub">Detalhamento automotivo feito com técnica, paciência e paixão pelo acabamento perfeito.</p>
-
-          <div class="hero__actions">
-            <a href="#" data-wa-generic class="btn btn--cta btn--lg">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
-              Falar no WhatsApp
-            </a>
-            <a href="#servicos" class="btn btn--ghost btn--lg">Ver Serviços</a>
-          </div>
-
-          <!-- Stats compactos -->
-          <div class="hero__stats">
-            <div class="hero__stat">
-              <strong>+1.200</strong>
-              <span>carros atendidos</span>
-            </div>
-            <div class="hero__stat-divider"></div>
-            <div class="hero__stat">
-              <strong>4.9 ★</strong>
-              <span>no Google</span>
-            </div>
-            <div class="hero__stat-divider"></div>
-            <div class="hero__stat">
-              <strong>32</strong>
-              <span>serviços</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__visual reveal is-visible">
-          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1200&auto=format&fit=crop" alt="Carro detalhado com pintura brilhante após polimento na Turbo Details" loading="eager">
-          <div class="hero__visual-tag">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span><strong>Acabamento garantido</strong><span>Cada detalhe inspecionado.</span></span>
-          </div>
-        </div>
-
-      </div>
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1600&auto=format&fit=crop" alt="" aria-hidden="true" loading="eager">
     </div>
-  </section>
+    <div class="hero-grid-deco" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-stripe" aria-hidden="true"></div>
 
-  <!-- ===================== QUEM SOMOS ===================== -->
-  <section class="section section--alt" id="sobre">
-    <div class="container about__grid">
-      <div class="about__media reveal">
-        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=900&auto=format&fit=crop" alt="Profissional da Turbo Details realizando polimento" loading="lazy">
-        <div class="about__badge-float">
-          <strong>100%</strong>
-          <span>dedicação<br>no detalhe</span>
+    <div class="wrap">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="status-badge open" id="status-badge">
+            <span class="status-dot"></span>Verificando…
+          </span>
+          <span class="label">Jequié, Bahia</span>
         </div>
-      </div>
 
-      <div class="reveal">
-        <span class="eyebrow">Quem Somos</span>
-        <h2 class="section-title">Detalhismo não é exagero. É respeito pelo seu carro.</h2>
-        <p class="section-desc" style="margin-bottom:1rem;">A Turbo Details nasceu da ideia de que estética automotiva de verdade não se faz com pressa. Cada veículo passa por um processo cuidadoso, técnico e pensado nos mínimos detalhes.</p>
-        <p class="section-desc">Trabalho sozinho, com dedicação total a cada carro, sem linha de produção. É essa atenção pessoal que faz a diferença.</p>
-        <ul class="about__list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento individual, sem pressa e sem terceirização</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Produtos e técnicas atualizadas para cada superfície</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Preço combinado é preço cobrado</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento para carros e motos</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        <h1>Seu carro,<span class="line2">no <span class="accent">nível máximo.</span></span></h1>
 
-  <!-- ===================== SERVIÇOS ===================== -->
-  <section class="section" id="servicos">
-    <div class="container">
-      <div class="section-head section-head--center reveal">
-        <span class="eyebrow">O que fazemos</span>
-        <h2 class="section-title">Serviços completos para o seu veículo</h2>
-        <p class="section-desc">Do básico ao detalhamento técnico mais avançado — tudo em um só lugar.</p>
-      </div>
-      <div class="services__grid reveal-stagger">
-        <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 16l1.5-4.5A2 2 0 016.4 10h11.2a2 2 0 011.9 1.5L21 16M5 16h14v3a1 1 0 01-1 1H6a1 1 0 01-1-1v-3z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="16" r="1.2"/><circle cx="16.5" cy="16" r="1.2"/></svg>
-          </div>
-          <h3>Lavagem Completa</h3>
-          <p>Lavagem externa, interna e secagem técnica para o dia a dia, sem riscar a pintura.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M7 19V9a2 2 0 012-2h6a2 2 0 012 2v10" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 7V5a3 3 0 116 0v2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Higienização Interna</h3>
-          <p>Bancos, carpetes e forrações tratados a fundo, eliminando manchas, odores e ácaros.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 010 18" opacity="0.4"/></svg>
-          </div>
-          <h3>Enceramento de Pintura</h3>
-          <p>Camada de proteção que devolve o brilho e repele água e sujeira por mais tempo.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Polimento & Cristalização</h3>
-          <p>Remove riscos e oxidação, devolvendo brilho de loja à pintura original.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18c2-6 5-10 9-10s7 4 9 10" stroke-linecap="round"/><circle cx="12" cy="8" r="2"/></svg>
-          </div>
-          <h3>Vitrificação / Coating</h3>
-          <p>Proteção de longa duração contra UV, chuva ácida e sujeira pesada.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="11" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Restauração de Faróis</h3>
-          <p>Devolve transparência aos faróis e cor original às peças plásticas oxidadas.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+        <p class="hero-sub">Estética automotiva profissional com técnica real, produtos certos e atenção em cada detalhe. Do mais simples ao mais completo.</p>
 
-  <!-- ===================== PREÇOS ===================== -->
-  <section class="section section--alt" id="precos">
-    <div class="container">
-      <div class="section-head section-head--center reveal">
-        <span class="eyebrow">Investimento</span>
-        <h2 class="section-title">Preços claros, sem letra pequena</h2>
-        <p class="section-desc">Escolha o serviço e fale direto comigo no WhatsApp.</p>
-      </div>
-
-      <div class="pricing-tabs reveal" role="tablist">
-        <button class="pricing-tab is-active" data-target="panel-destaques">Mais Pedidos</button>
-        <button class="pricing-tab" data-target="panel-motos">Motos</button>
-        <button class="pricing-tab" data-target="panel-planos">Planos</button>
-      </div>
-
-      <div class="pricing-panel is-active" id="panel-destaques">
-        <div class="price-grid reveal-stagger">
-          <div class="price-card">
-            <h3>Lavagem Tradicional</h3>
-            <p class="price-card__desc">Lavagem externa e interna completa, com secagem e acabamento nos detalhes.</p>
-            <div class="price-card__sizes"><span>P R$70</span><span>M R$80</span><span>G R$95</span></div>
-            <div class="price-card__value">R$ 70<small>a partir de</small></div>
-            <a href="#" class="btn btn--ghost btn--block btn--sm" data-wa-service="Lavagem Tradicional">Quero esse</a>
-          </div>
-          <div class="price-card">
-            <h3>Manutenção Bronze</h3>
-            <p class="price-card__desc">Lavagem com manutenção da proteção da pintura entre detalhamentos.</p>
-            <div class="price-card__sizes"><span>P R$139</span><span>M R$149</span><span>G R$169</span></div>
-            <div class="price-card__value">R$ 139<small>a partir de</small></div>
-            <a href="#" class="btn btn--ghost btn--block btn--sm" data-wa-service="Lavagem Manutenção Inteligente Bronze">Quero esse</a>
-          </div>
-          <div class="price-card">
-            <h3>Higienização do Carpete</h3>
-            <p class="price-card__desc">Limpeza profunda do carpete, removendo manchas antigas e odores.</p>
-            <div class="price-card__value">R$ 120</div>
-            <a href="#" class="btn btn--ghost btn--block btn--sm" data-wa-service="Higienização do Carpete">Quero esse</a>
-          </div>
-          <div class="price-card price-card--featured">
-            <span class="price-card__badge">Popular</span>
-            <h3>Higienização dos Bancos</h3>
-            <p class="price-card__desc">Limpeza completa de bancos em tecido ou couro, com hidratação.</p>
-            <div class="price-card__value">R$ 197</div>
-            <a href="#" class="btn btn--cta btn--block btn--sm" data-wa-service="Higienização dos Bancos">Quero esse</a>
-          </div>
-          <div class="price-card">
-            <h3>Lavagem Premium Prata</h3>
-            <p class="price-card__desc">Lavagem tradicional + camada de proteção e acabamento técnico premium.</p>
-            <div class="price-card__sizes"><span>P R$200</span><span>M R$220</span><span>G R$250</span></div>
-            <div class="price-card__value">R$ 200<small>a partir de</small></div>
-            <a href="#" class="btn btn--ghost btn--block btn--sm" data-wa-service="Lavagem Técnica Premium Prata">Quero esse</a>
-          </div>
-          <div class="price-card">
-            <h3>Revitalização de Farol</h3>
-            <p class="price-card__desc">Remove a opacidade amarelada e devolve a transparência original.</p>
-            <div class="price-card__value">R$ 170</div>
-            <a href="#" class="btn btn--ghost btn--block btn--sm" data-wa-service="Revitalização de Farol">Quero esse</a>
-          </div>
-          <div class="price-card price-card--featured">
-            <span class="price-card__badge">Top de linha</span>
-            <h3>Elite Gold Detalhado</h3>
-            <p class="price-card__desc">Tratamento completo de detalhamento estético, do interior à pintura.</p>
-            <div class="price-card__sizes"><span>P R$310</span><span>M R$335</span><span>G R$360</span></div>
-            <div class="price-card__value">R$ 310<small>a partir de</small></div>
-            <a href="#" class="btn btn--cta btn--block btn--sm" data-wa-service="Tratamento Detalhado Elite Gold">Quero esse</a>
-          </div>
-          <div class="price-card price-card--featured">
-            <span class="price-card__badge">Premium</span>
-            <h3>Pacote Diamond</h3>
-            <p class="price-card__desc">O mais completo: detalhamento total externo e interno, nível showroom.</p>
-            <div class="price-card__sizes"><span>P R$1.000</span><span>M R$1.100</span><span>G R$1.200</span></div>
-            <div class="price-card__value">R$ 1.000<small>a partir de</small></div>
-            <a href="#" class="btn btn--cta btn--block btn--sm" data-wa-service="Pacote Turbo Details Diamond">Quero esse</a>
-          </div>
+        <div class="hero-actions">
+          <a href="#" data-wa="generic" class="btn btn-lime">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a href="#servicos" class="btn btn-outline">Ver serviços</a>
         </div>
-        <div class="see-all-wrap">
-          <button class="btn btn--ghost" data-open-modal>Ver tabela completa (32 serviços)</button>
-        </div>
-      </div>
 
-      <div class="pricing-panel" id="panel-motos">
-        <div class="price-grid reveal-stagger">
-          <div class="price-card">
-            <h3>Lavagem Técnica Moto</h3>
-            <p class="price-card__desc">Lavagem completa com produtos adequados para motocicletas.</p>
-            <div class="price-card__value">R$ 50</div>
-            <a href="#" class="btn btn--ghost btn--block btn--sm" data-wa-service="Lavagem Técnica Moto">Quero esse</a>
-          </div>
-          <div class="price-card price-card--featured">
-            <span class="price-card__badge">Popular</span>
-            <h3>Lavagem Técnica Detalhada</h3>
-            <p class="price-card__desc">Lavagem técnica + atenção aos detalhes de carenagem e acabamentos.</p>
-            <div class="price-card__value">R$ 150</div>
-            <a href="#" class="btn btn--cta btn--block btn--sm" data-wa-service="Lavagem Técnica Moto Detalhada">Quero esse</a>
-          </div>
-          <div class="price-card">
-            <h3>Polimento Moto</h3>
-            <p class="price-card__desc">Polimento de pintura e partes cromadas, devolvendo o brilho original.</p>
-            <div class="price-card__value">R$ 150</div>
-            <a href="#" class="btn btn--ghost btn--block btn--sm" data-wa-service="Polimento Moto">Quero esse</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="pricing-panel" id="panel-planos">
-        <div class="plans-grid reveal-stagger">
-          <div class="plan-card">
-            <span class="plan-card__tag">Recorrente</span>
-            <h3>Plano Quinzenal</h3>
-            <p>Seu carro sempre limpo, com visitas a cada 15 dias e prioridade no agendamento.</p>
-            <div class="plan-card__price">R$ 122<span> /visita · a partir de</span></div>
-            <div class="price-card__sizes"><span>P R$122</span><span>M R$139</span><span>G R$165</span></div>
-            <a href="#" class="btn btn--cta btn--block" data-wa-service="Plano Quinzenal">Assinar plano quinzenal</a>
-          </div>
-          <div class="plan-card">
-            <span class="plan-card__tag">Recorrente</span>
-            <h3>Plano Semanal</h3>
-            <p>Para quem não abre mão de rodar sempre com o carro impecável, toda semana.</p>
-            <div class="plan-card__price">R$ 239<span> /visita · a partir de</span></div>
-            <div class="price-card__sizes"><span>P R$239</span><span>M R$273</span><span>G R$324</span></div>
-            <a href="#" class="btn btn--cta btn--block" data-wa-service="Plano Semanal">Assinar plano semanal</a>
-          </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>+1.200</strong><span>carros atendidos</span></div>
+          <div class="stat-div"></div>
+          <div class="hero-stat"><strong>4.9★</strong><span>avaliação Google</span></div>
+          <div class="stat-div"></div>
+          <div class="hero-stat"><strong>32</strong><span>serviços</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== MODAL TABELA COMPLETA ===================== -->
-  <div class="modal" id="full-table-modal" role="dialog" aria-modal="true" aria-label="Tabela completa de serviços">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__box">
-      <button class="modal__close" data-close-modal aria-label="Fechar">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
-      </button>
-      <h3>Catálogo completo · 32 serviços</h3>
-      <div class="full-table__group"><h4>Lavagens</h4>
-        <div class="full-table__row"><span class="name">Lavagem Externa Simples<span class="sizes">P R$35 · M R$40 · G R$45</span></span><span class="val">a partir de R$35</span></div>
-        <div class="full-table__row"><span class="name">Lavagem Tradicional<span class="sizes">P R$70 · M R$80 · G R$95</span></span><span class="val">a partir de R$70</span></div>
-        <div class="full-table__row"><span class="name">Manutenção Bronze<span class="sizes">P R$139 · M R$149 · G R$169</span></span><span class="val">a partir de R$139</span></div>
-        <div class="full-table__row"><span class="name">Premium Prata<span class="sizes">P R$200 · M R$220 · G R$250</span></span><span class="val">a partir de R$200</span></div>
-        <div class="full-table__row"><span class="name">Lavagem Técnica Moto</span><span class="val">R$50</span></div>
-        <div class="full-table__row"><span class="name">Lavagem Técnica Moto Detalhada</span><span class="val">R$150</span></div>
-      </div>
-      <div class="full-table__group"><h4>Higienização & Limpeza</h4>
-        <div class="full-table__row"><span class="name">Aspiração Interna</span><span class="val">R$30</span></div>
-        <div class="full-table__row"><span class="name">Limpeza Interna</span><span class="val">R$60</span></div>
-        <div class="full-table__row"><span class="name">Limpeza de Teto</span><span class="val">R$70</span></div>
-        <div class="full-table__row"><span class="name">Sanitização Ar Condicionado</span><span class="val">R$70</span></div>
-        <div class="full-table__row"><span class="name">Higienização do Carpete</span><span class="val">R$120</span></div>
-        <div class="full-table__row"><span class="name">Higienização dos Bancos</span><span class="val">R$197</span></div>
-        <div class="full-table__row"><span class="name">Pacote Higienização Interna<span class="sizes">P R$590 · M R$690 · G R$790</span></span><span class="val">a partir de R$590</span></div>
-      </div>
-      <div class="full-table__group"><h4>Tratamentos & Proteção</h4>
-        <div class="full-table__row"><span class="name">Remoção de Piche</span><span class="val">R$50</span></div>
-        <div class="full-table__row"><span class="name">Enceramento de Pintura</span><span class="val">R$80</span></div>
-        <div class="full-table__row"><span class="name">Restauração de Plástico Externo</span><span class="val">R$70</span></div>
-        <div class="full-table__row"><span class="name">Tratamento de Motor</span><span class="val">R$150</span></div>
-        <div class="full-table__row"><span class="name">Tratamento Chassi</span><span class="val">R$150</span></div>
-        <div class="full-table__row"><span class="name">Tratamento de Motor Detalhado</span><span class="val">R$250</span></div>
-        <div class="full-table__row"><span class="name">Tratamento Chassi Detalhado</span><span class="val">R$280</span></div>
-        <div class="full-table__row"><span class="name">Revitalização de Farol</span><span class="val">R$170</span></div>
-        <div class="full-table__row"><span class="name">Descontaminação + Cristalização de Vidros</span><span class="val">R$160</span></div>
-      </div>
-      <div class="full-table__group"><h4>Estética & Polimento</h4>
-        <div class="full-table__row"><span class="name">Polimento Moto</span><span class="val">R$150</span></div>
-        <div class="full-table__row"><span class="name">Polimento Comercial<span class="sizes">P R$609 · M R$719 · G R$849</span></span><span class="val">a partir de R$609</span></div>
-        <div class="full-table__row"><span class="name">Polimento Técnico<span class="sizes">P R$1.149 · M R$1.349 · G R$1.649</span></span><span class="val">a partir de R$1.149</span></div>
-        <div class="full-table__row"><span class="name">Elite Gold<span class="sizes">P R$310 · M R$335 · G R$360</span></span><span class="val">a partir de R$310</span></div>
-      </div>
-      <div class="full-table__group"><h4>Combos & Pacotes</h4>
-        <div class="full-table__row"><span class="name">Combo 1</span><span class="val">R$200</span></div>
-        <div class="full-table__row"><span class="name">Combo 3</span><span class="val">R$280</span></div>
-        <div class="full-table__row"><span class="name">Pacote Diamond<span class="sizes">P R$1.000 · M R$1.100 · G R$1.200</span></span><span class="val">a partir de R$1.000</span></div>
-      </div>
-      <div class="full-table__group"><h4>Planos de Manutenção</h4>
-        <div class="full-table__row"><span class="name">Plano Quinzenal<span class="sizes">P R$122 · M R$139 · G R$165</span></span><span class="val">a partir de R$122</span></div>
-        <div class="full-table__row"><span class="name">Plano Semanal<span class="sizes">P R$239 · M R$273 · G R$324</span></span><span class="val">a partir de R$239</span></div>
-      </div>
-      <a href="#" data-wa-generic class="btn btn--cta btn--block" style="margin-top:1.5rem;">Não sabe qual escolher? Fale comigo</a>
+  <!-- STATUS BANNER FLUTUANTE -->
+  <div class="status-banner" id="status-banner">
+    <div style="background:rgba(13,13,26,.95);border:1px solid rgba(124,58,237,.25);border-radius:12px;padding:.75rem 1rem;display:flex;flex-direction:column;gap:.3rem;backdrop-filter:blur(12px);max-width:220px;">
+      <span class="status-badge open" id="status-banner-badge" style="font-size:.72rem;padding:.25rem .7rem;"><span class="status-dot"></span>Verificando…</span>
+      <span id="status-banner-text" style="font-size:.72rem;color:#9090a8;line-height:1.4;"></span>
     </div>
   </div>
 
-  <!-- ===================== ANTES & DEPOIS ===================== -->
-  <section class="section" id="antes-depois">
-    <div class="container">
-      <div class="section-head section-head--center reveal">
-        <span class="eyebrow">Resultados reais</span>
-        <h2 class="section-title">Antes &amp; Depois</h2>
-        <p class="section-desc">Veja a diferença que o detalhamento faz. (Fotos ilustrativas — em breve, fotos reais dos nossos trabalhos.)</p>
-      </div>
-      <div class="ba-grid reveal-stagger">
-        <div class="ba-item">
-          <div class="ba-split">
-            <div class="ba-side ba-side--before">
-              <span class="ba-label">Antes</span>
-              <img src="https://images.unsplash.com/photo-1592805144716-feeccccbd1cf?q=80&w=800&auto=format&fit=crop" alt="Carro antes do polimento">
-            </div>
-            <div class="ba-divider"></div>
-            <div class="ba-side ba-side--after">
-              <span class="ba-label">Depois</span>
-              <img src="https://images.unsplash.com/photo-1605515298946-d664eda77a7d?q=80&w=800&auto=format&fit=crop" alt="Carro após polimento">
-            </div>
+  <!-- SOBRE -->
+  <section class="section section-alt" id="sobre">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=900&auto=format&fit=crop" alt="Profissional realizando polimento" loading="lazy">
+          <div class="about-badge">
+            <strong>5+</strong>
+            <span>anos no mercado</span>
           </div>
-          <p class="ba-caption">Polimento + Cristalização — remoção completa de riscos na pintura</p>
         </div>
-        <div class="ba-item">
-          <div class="ba-split">
-            <div class="ba-side ba-side--before">
-              <span class="ba-label">Antes</span>
-              <img src="https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?q=80&w=800&auto=format&fit=crop" alt="Interior antes da higienização">
-            </div>
-            <div class="ba-divider"></div>
-            <div class="ba-side ba-side--after">
-              <span class="ba-label">Depois</span>
-              <img src="https://images.unsplash.com/photo-1619447536592-9d12c64c8a30?q=80&w=800&auto=format&fit=crop" alt="Interior após higienização">
-            </div>
+        <div class="about-text reveal">
+          <div class="section-head">
+            <p class="label">Quem somos</p>
+            <h2>Detalhismo que faz a diferença.</h2>
+            <p>A Turbo Details nasceu da crença de que estética automotiva de verdade não se faz com pressa. Cada veículo passa por um processo técnico e cuidadoso, sem linha de produção — só dedicação.</p>
           </div>
-          <p class="ba-caption">Higienização interna completa — bancos e carpete renovados</p>
+          <ul class="about-list">
+            <li>Atendimento individual, sem terceirização</li>
+            <li>Produtos e técnicas atualizados para cada superfície</li>
+            <li>Preço combinado é preço cobrado, sem surpresas</li>
+            <li>Atendemos carros e motos</li>
+          </ul>
+          <br>
+          <a href="#" data-wa="generic" class="btn btn-primary">Conheça nosso trabalho</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== AVALIAÇÕES ===================== -->
-  <section class="section section--alt" id="avaliacoes">
-    <div class="container">
-      <div class="section-head section-head--center reveal">
-        <span class="eyebrow">O que dizem</span>
-        <h2 class="section-title">Clientes que confiam no nosso trabalho</h2>
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="label">O que fazemos</p>
+        <h2>Do básico ao nível <span class="purple">showroom.</span></h2>
+        <p>Serviços completos para cuidar do seu veículo, por dentro e por fora.</p>
       </div>
-      <div class="reviews-track-wrap reveal">
-        <div class="reviews-track">
-          <article class="review-card">
-            <div class="review-card__stars">★★★★★</div>
-            <p>"Levei meu carro pra um polimento e fiquei impressionado com o resultado. Parecia que tinha saído da concessionária."</p>
-            <div class="review-card__author">
-              <div class="review-card__avatar">R</div>
-              <div><strong>Rafael M.</strong><span>Polimento Comercial</span></div>
-            </div>
-          </article>
-          <article class="review-card">
-            <div class="review-card__stars">★★★★★</div>
-            <p>"Higienizei os bancos que estavam horríveis depois que meu filho derramou suco. Voltaram a ficar como novos!"</p>
-            <div class="review-card__author">
-              <div class="review-card__avatar">C</div>
-              <div><strong>Carla S.</strong><span>Higienização dos Bancos</span></div>
-            </div>
-          </article>
-          <article class="review-card">
-            <div class="review-card__stars">★★★★★</div>
-            <p>"Assinei o plano quinzenal e foi a melhor decisão. Meu carro está sempre limpo e o atendimento é muito profissional."</p>
-            <div class="review-card__author">
-              <div class="review-card__avatar">D</div>
-              <div><strong>Diego A.</strong><span>Plano Quinzenal</span></div>
-            </div>
-          </article>
-          <article class="review-card">
-            <div class="review-card__stars">★★★★★</div>
-            <p>"Revitalização de farol salvou meu carro de uma multa por iluminação ruim. Ficaram cristalinos!"</p>
-            <div class="review-card__author">
-              <div class="review-card__avatar">M</div>
-              <div><strong>Marcos P.</strong><span>Revitalização de Farol</span></div>
-            </div>
-          </article>
+      <div class="services-grid stagger">
+        <div class="service-item">
+          <span class="service-num">01</span>
+          <h3>Lavagem Completa</h3>
+          <p>Lavagem externa, interna e secagem técnica. Sem riscar, sem atalho.</p>
         </div>
-        <div class="reviews-nav">
-          <button data-review-prev aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <button data-review-next aria-label="Próxima"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="service-item">
+          <span class="service-num">02</span>
+          <h3>Higienização Interna</h3>
+          <p>Bancos, carpetes e forrações tratados a fundo — manchas, odores e ácaros eliminados.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-num">03</span>
+          <h3>Polimento & Cristalização</h3>
+          <p>Remove riscos e oxidação da pintura. Devolve brilho de carro novo.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-num">04</span>
+          <h3>Vitrificação / Coating</h3>
+          <p>Camada de proteção contra UV, chuva ácida e sujeira. Dura muito mais que cera.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-num">05</span>
+          <h3>Restauração de Faróis</h3>
+          <p>Tira a opacidade amarelada e devolve a transparência original em horas.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-num">06</span>
+          <h3>Planos de Manutenção</h3>
+          <p>Seu carro sempre impecável com visitas semanais ou quinzenais.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== FAQ ===================== -->
+  <!-- PREÇOS -->
+  <section class="section section-alt" id="precos">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="label">Investimento</p>
+        <h2>Preços claros, <span class="accent">sem letra pequena.</span></h2>
+        <p>Escolha o serviço e fale direto no WhatsApp para agendar.</p>
+      </div>
+
+      <div class="price-tabs reveal">
+        <button class="price-tab active" data-panel="p-destaque">Mais pedidos</button>
+        <button class="price-tab" data-panel="p-motos">Motos</button>
+        <button class="price-tab" data-panel="p-planos">Planos</button>
+      </div>
+
+      <div class="price-panel active" id="p-destaque">
+        <div class="price-grid stagger">
+          <div class="price-card">
+            <h3>Lavagem Tradicional</h3>
+            <p>Externa e interna completa com secagem e acabamento nos detalhes.</p>
+            <div class="price-sizes"><span>P R$70</span><span>M R$80</span><span>G R$95</span></div>
+            <div class="price-value">R$ 70 <small>a partir de</small></div>
+            <a href="#" data-wa="Lavagem Tradicional" class="btn btn-outline btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card">
+            <h3>Manutenção Bronze</h3>
+            <p>Lavagem com manutenção da proteção da pintura entre detalhamentos.</p>
+            <div class="price-sizes"><span>P R$139</span><span>M R$149</span><span>G R$169</span></div>
+            <div class="price-value">R$ 139 <small>a partir de</small></div>
+            <a href="#" data-wa="Lavagem Manutenção Bronze" class="btn btn-outline btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card">
+            <h3>Higienização do Carpete</h3>
+            <p>Limpeza profunda do carpete, manchas antigas e odores eliminados.</p>
+            <div class="price-value">R$ 120</div>
+            <a href="#" data-wa="Higienização do Carpete" class="btn btn-outline btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card highlight">
+            <span class="price-tag">Popular</span>
+            <h3>Higienização dos Bancos</h3>
+            <p>Bancos de tecido ou couro tratados a fundo com hidratação.</p>
+            <div class="price-value">R$ 197</div>
+            <a href="#" data-wa="Higienização dos Bancos" class="btn btn-primary btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card">
+            <h3>Premium Prata</h3>
+            <p>Lavagem tradicional com camada de proteção e acabamento técnico.</p>
+            <div class="price-sizes"><span>P R$200</span><span>M R$220</span><span>G R$250</span></div>
+            <div class="price-value">R$ 200 <small>a partir de</small></div>
+            <a href="#" data-wa="Lavagem Premium Prata" class="btn btn-outline btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card">
+            <h3>Revitalização de Farol</h3>
+            <p>Remove a opacidade e devolve transparência cristalina.</p>
+            <div class="price-value">R$ 170</div>
+            <a href="#" data-wa="Revitalização de Farol" class="btn btn-outline btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card highlight">
+            <span class="price-tag">Top de linha</span>
+            <h3>Elite Gold</h3>
+            <p>Tratamento estético completo, do interior à pintura externa.</p>
+            <div class="price-sizes"><span>P R$310</span><span>M R$335</span><span>G R$360</span></div>
+            <div class="price-value">R$ 310 <small>a partir de</small></div>
+            <a href="#" data-wa="Elite Gold Detalhado" class="btn btn-primary btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card highlight">
+            <span class="price-tag">Premium</span>
+            <h3>Pacote Diamond</h3>
+            <p>O mais completo: detalhamento total externo e interno, nível showroom.</p>
+            <div class="price-sizes"><span>P R$1.000</span><span>M R$1.100</span><span>G R$1.200</span></div>
+            <div class="price-value">R$ 1.000 <small>a partir de</small></div>
+            <a href="#" data-wa="Pacote Diamond" class="btn btn-primary btn-block btn-sm">Quero esse</a>
+          </div>
+        </div>
+        <div class="see-all">
+          <button class="btn btn-outline" data-open-modal>Ver tabela completa (32 serviços)</button>
+        </div>
+      </div>
+
+      <div class="price-panel" id="p-motos">
+        <div class="price-grid stagger">
+          <div class="price-card">
+            <h3>Lavagem Técnica Moto</h3>
+            <p>Lavagem completa com produtos adequados para motocicletas.</p>
+            <div class="price-value">R$ 50</div>
+            <a href="#" data-wa="Lavagem Técnica Moto" class="btn btn-outline btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card highlight">
+            <span class="price-tag">Popular</span>
+            <h3>Lavagem Detalhada Moto</h3>
+            <p>Lavagem técnica com atenção especial à carenagem e acabamentos.</p>
+            <div class="price-value">R$ 150</div>
+            <a href="#" data-wa="Lavagem Técnica Moto Detalhada" class="btn btn-primary btn-block btn-sm">Quero esse</a>
+          </div>
+          <div class="price-card">
+            <h3>Polimento Moto</h3>
+            <p>Polimento da pintura e peças cromadas, brilho original restaurado.</p>
+            <div class="price-value">R$ 150</div>
+            <a href="#" data-wa="Polimento Moto" class="btn btn-outline btn-block btn-sm">Quero esse</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-panel" id="p-planos">
+        <div class="price-grid stagger" style="max-width:700px;margin:0 auto;">
+          <div class="price-card">
+            <span class="price-tag">Quinzenal</span>
+            <h3>Plano Quinzenal</h3>
+            <p>Visita a cada 15 dias, prioridade no agendamento e carro sempre limpo.</p>
+            <div class="price-sizes"><span>P R$122</span><span>M R$139</span><span>G R$165</span></div>
+            <div class="price-value">R$ 122 <small>/visita · a partir de</small></div>
+            <a href="#" data-wa="Plano Quinzenal" class="btn btn-primary btn-block">Assinar plano</a>
+          </div>
+          <div class="price-card highlight">
+            <span class="price-tag">Semanal</span>
+            <h3>Plano Semanal</h3>
+            <p>Para quem não abre mão do carro impecável toda semana.</p>
+            <div class="price-sizes"><span>P R$239</span><span>M R$273</span><span>G R$324</span></div>
+            <div class="price-value">R$ 239 <small>/visita · a partir de</small></div>
+            <a href="#" data-wa="Plano Semanal" class="btn btn-lime btn-block">Assinar plano</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL TABELA COMPLETA -->
+  <div class="modal" id="modal">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg></button>
+      <h3>Tabela completa — 32 serviços</h3>
+      <div class="table-group"><h4>Lavagens</h4>
+        <div class="table-row"><span class="tname">Lavagem Externa Simples<small>P R$35 · M R$40 · G R$45</small></span><span class="tval">a partir R$35</span></div>
+        <div class="table-row"><span class="tname">Lavagem Tradicional<small>P R$70 · M R$80 · G R$95</small></span><span class="tval">a partir R$70</span></div>
+        <div class="table-row"><span class="tname">Manutenção Bronze<small>P R$139 · M R$149 · G R$169</small></span><span class="tval">a partir R$139</span></div>
+        <div class="table-row"><span class="tname">Premium Prata<small>P R$200 · M R$220 · G R$250</small></span><span class="tval">a partir R$200</span></div>
+        <div class="table-row"><span class="tname">Lavagem Técnica Moto</span><span class="tval">R$50</span></div>
+        <div class="table-row"><span class="tname">Lavagem Técnica Moto Detalhada</span><span class="tval">R$150</span></div>
+      </div>
+      <div class="table-group"><h4>Higienização & Limpeza</h4>
+        <div class="table-row"><span class="tname">Aspiração Interna</span><span class="tval">R$30</span></div>
+        <div class="table-row"><span class="tname">Limpeza Interna</span><span class="tval">R$60</span></div>
+        <div class="table-row"><span class="tname">Limpeza de Teto</span><span class="tval">R$70</span></div>
+        <div class="table-row"><span class="tname">Sanitização Ar Condicionado</span><span class="tval">R$70</span></div>
+        <div class="table-row"><span class="tname">Higienização do Carpete</span><span class="tval">R$120</span></div>
+        <div class="table-row"><span class="tname">Higienização dos Bancos</span><span class="tval">R$197</span></div>
+        <div class="table-row"><span class="tname">Pacote Higienização Interna<small>P R$590 · M R$690 · G R$790</small></span><span class="tval">a partir R$590</span></div>
+      </div>
+      <div class="table-group"><h4>Tratamentos & Proteção</h4>
+        <div class="table-row"><span class="tname">Remoção de Piche</span><span class="tval">R$50</span></div>
+        <div class="table-row"><span class="tname">Enceramento de Pintura</span><span class="tval">R$80</span></div>
+        <div class="table-row"><span class="tname">Restauração de Plástico Externo</span><span class="tval">R$70</span></div>
+        <div class="table-row"><span class="tname">Tratamento de Motor</span><span class="tval">R$150</span></div>
+        <div class="table-row"><span class="tname">Tratamento de Chassi</span><span class="tval">R$150</span></div>
+        <div class="table-row"><span class="tname">Tratamento de Motor Detalhado</span><span class="tval">R$250</span></div>
+        <div class="table-row"><span class="tname">Tratamento de Chassi Detalhado</span><span class="tval">R$280</span></div>
+        <div class="table-row"><span class="tname">Revitalização de Farol</span><span class="tval">R$170</span></div>
+        <div class="table-row"><span class="tname">Descontaminação + Cristalização de Vidros</span><span class="tval">R$160</span></div>
+      </div>
+      <div class="table-group"><h4>Estética & Polimento</h4>
+        <div class="table-row"><span class="tname">Polimento Moto</span><span class="tval">R$150</span></div>
+        <div class="table-row"><span class="tname">Polimento Comercial<small>P R$609 · M R$719 · G R$849</small></span><span class="tval">a partir R$609</span></div>
+        <div class="table-row"><span class="tname">Polimento Técnico<small>P R$1.149 · M R$1.349 · G R$1.649</small></span><span class="tval">a partir R$1.149</span></div>
+        <div class="table-row"><span class="tname">Elite Gold<small>P R$310 · M R$335 · G R$360</small></span><span class="tval">a partir R$310</span></div>
+      </div>
+      <div class="table-group"><h4>Combos & Pacotes</h4>
+        <div class="table-row"><span class="tname">Combo 1</span><span class="tval">R$200</span></div>
+        <div class="table-row"><span class="tname">Combo 3</span><span class="tval">R$280</span></div>
+        <div class="table-row"><span class="tname">Pacote Diamond<small>P R$1.000 · M R$1.100 · G R$1.200</small></span><span class="tval">a partir R$1.000</span></div>
+      </div>
+      <div class="table-group"><h4>Planos de Manutenção</h4>
+        <div class="table-row"><span class="tname">Plano Quinzenal<small>P R$122 · M R$139 · G R$165</small></span><span class="tval">a partir R$122</span></div>
+        <div class="table-row"><span class="tname">Plano Semanal<small>P R$239 · M R$273 · G R$324</small></span><span class="tval">a partir R$239</span></div>
+      </div>
+      <a href="#" data-wa="generic" class="btn btn-primary btn-block" style="margin-top:1.5rem;">Não sabe qual escolher? Fale comigo</a>
+    </div>
+  </div>
+
+  <!-- ANTES & DEPOIS -->
+  <section class="section" id="resultados">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="label">Resultados reais</p>
+        <h2>Antes <span class="accent">&</span> Depois</h2>
+        <p>A diferença que o detalhamento faz — cada detalhe conta. (Fotos ilustrativas · em breve nossos trabalhos reais.)</p>
+      </div>
+      <div class="ba-grid stagger">
+        <div class="ba-item">
+          <div class="ba-split">
+            <div class="ba-side ba-side--before">
+              <span class="ba-lbl">Antes</span>
+              <img src="https://images.unsplash.com/photo-1592805144716-feeccccbd1cf?q=80&w=800&auto=format&fit=crop" alt="Antes do polimento" loading="lazy">
+            </div>
+            <div class="ba-divider"></div>
+            <div class="ba-side ba-side--after">
+              <span class="ba-lbl">Depois</span>
+              <img src="https://images.unsplash.com/photo-1605515298946-d664eda77a7d?q=80&w=800&auto=format&fit=crop" alt="Após polimento" loading="lazy">
+            </div>
+          </div>
+          <p class="ba-caption">Polimento + Cristalização — riscos e oxidação eliminados</p>
+        </div>
+        <div class="ba-item">
+          <div class="ba-split">
+            <div class="ba-side ba-side--before">
+              <span class="ba-lbl">Antes</span>
+              <img src="https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?q=80&w=800&auto=format&fit=crop" alt="Interior antes" loading="lazy">
+            </div>
+            <div class="ba-divider"></div>
+            <div class="ba-side ba-side--after">
+              <span class="ba-lbl">Depois</span>
+              <img src="https://images.unsplash.com/photo-1619447536592-9d12c64c8a30?q=80&w=800&auto=format&fit=crop" alt="Interior depois" loading="lazy">
+            </div>
+          </div>
+          <p class="ba-caption">Higienização completa — bancos e carpetes renovados</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="section section-alt" id="avaliacoes">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="label">Quem já veio</p>
+        <h2>O que nossos clientes dizem.</h2>
+      </div>
+      <div class="reviews-scroll reveal">
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Levei meu carro para um polimento e fiquei impressionado. Parecia que tinha saído da concessionária."</p>
+          <div class="review-author"><div class="review-avatar">R</div><div><strong>Rafael M.</strong><span>Polimento Comercial</span></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Higienizei os bancos que estavam horríveis depois que meu filho derramou suco. Voltaram como novos!"</p>
+          <div class="review-author"><div class="review-avatar">C</div><div><strong>Carla S.</strong><span>Higienização dos Bancos</span></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Assinei o plano quinzenal e foi a melhor decisão. Carro sempre limpo e atendimento muito profissional."</p>
+          <div class="review-author"><div class="review-avatar">D</div><div><strong>Diego A.</strong><span>Plano Quinzenal</span></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"A revitalização de farol salvou meu carro de uma multa por iluminação. Ficaram cristalinos!"</p>
+          <div class="review-author"><div class="review-avatar">M</div><div><strong>Marcos P.</strong><span>Revitalização de Farol</span></div></div>
+        </article>
+      </div>
+      <div class="reviews-nav">
+        <button data-prev aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6" stroke-linecap="round"/></svg></button>
+        <button data-next aria-label="Próxima"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
   <section class="section" id="faq">
-    <div class="container">
+    <div class="wrap" style="max-width:780px;">
       <div class="section-head reveal">
-        <span class="eyebrow">Dúvidas frequentes</span>
-        <h2 class="section-title">Perguntas que recebemos sempre</h2>
+        <p class="label">Dúvidas</p>
+        <h2>Perguntas frequentes.</h2>
       </div>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <button class="faq-item__q">Preciso agendar antes de levar o carro?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
-          <div class="faq-item__a"><p>Não é obrigatório — atendemos por ordem de chegada, das 8h às 18h, todos os dias. Mas para serviços mais longos como polimento, recomendamos avisar antes pelo WhatsApp.</p></div>
+          <button class="faq-q">Preciso agendar com antecedência? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+          <div class="faq-a"><p>Não é obrigatório — atendemos por ordem de chegada, Seg–Sáb das 8h às 18h. Para serviços mais longos como polimento, recomendamos avisar antes pelo WhatsApp.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__q">Quanto tempo demora cada serviço?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
-          <div class="faq-item__a"><p>Uma lavagem tradicional leva entre 40 minutos e 1h30. Serviços técnicos como polimento ou o Pacote Diamond podem levar de algumas horas a mais de um dia. Sempre informamos o prazo antes de começar.</p></div>
+          <button class="faq-q">Quanto tempo demora cada serviço? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+          <div class="faq-a"><p>Lavagem tradicional: 40min–1h30. Serviços técnicos como polimento ou Pacote Diamond podem levar de algumas horas a um dia completo. Sempre informamos o prazo antes.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__q">Quais formas de pagamento são aceitas?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
-          <div class="faq-item__a"><p>Aceitamos Pix, cartão de crédito, cartão de débito e dinheiro.</p></div>
+          <button class="faq-q">Quais formas de pagamento são aceitas? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+          <div class="faq-a"><p>Pix, cartão de crédito, cartão de débito e dinheiro.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__q">O preço muda de acordo com o porte do carro?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
-          <div class="faq-item__a"><p>Sim, para alguns serviços o valor varia entre porte pequeno, médio e grande. Os valores aparecem direto no card do serviço ou na tabela completa.</p></div>
+          <button class="faq-q">O preço muda conforme o porte do carro? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+          <div class="faq-a"><p>Sim, para vários serviços o valor varia entre porte P, M e G. Os valores aparecem no card de cada serviço e na tabela completa.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__q">Vocês atendem motos também?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
-          <div class="faq-item__a"><p>Sim! Temos serviços próprios para motos, com produtos e técnicas adequadas para cada tipo de superfície.</p></div>
+          <button class="faq-q">Atendem motos também? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+          <div class="faq-a"><p>Sim! Temos serviços próprios para motos com produtos e técnicas adequadas para cada superfície.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== LOCALIZAÇÃO ===================== -->
-  <section class="section section--alt" id="local">
-    <div class="container">
+  <!-- LOCALIZAÇÃO -->
+  <section class="section section-alt" id="local">
+    <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Onde estamos</span>
-        <h2 class="section-title">Nos visite no centro de Jequié</h2>
+        <p class="label">Onde estamos</p>
+        <h2>No centro de Jequié, <span class="purple">te esperando.</span></h2>
       </div>
-      <div class="location__grid">
-        <div class="location__map reveal">
-          <iframe src="https://maps.google.com/maps?q=Rua%20Medeiros%20Neto%2C%2042%2C%20Centro%2C%20Jequi%C3%A9%20-%20BA%2C%2045203-610&t=&z=16&ie=UTF8&iwloc=&output=embed" title="Localização Turbo Details" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="location-grid">
+        <div class="location-map reveal">
+          <iframe src="https://maps.google.com/maps?q=Rua%20Medeiros%20Neto%2C%2042%2C%20Centro%2C%20Jequi%C3%A9%20-%20BA&z=16&output=embed" title="Localização Turbo Details" loading="lazy"></iframe>
         </div>
-        <div class="location__info reveal">
+        <div class="location-cards reveal">
           <div class="info-card">
-            <div class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a7 7 0 1114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a7 7 0 1114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
             <div><h4>Endereço</h4><p>Rua Medeiros Neto, 42 — Centro<br>Jequié - BA, 45203-610</p></div>
           </div>
           <div class="info-card">
-            <div class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round"/></svg></div>
-            <div style="width:100%">
-              <h4>Horário de Funcionamento</h4>
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round"/></svg></div>
+            <div style="flex:1">
+              <h4>Horário</h4>
               <table class="hours-table">
-                <tr data-day="1"><td>Segunda-feira</td><td>08h – 18h</td></tr>
-                <tr data-day="2"><td>Terça-feira</td><td>08h – 18h</td></tr>
-                <tr data-day="3"><td>Quarta-feira</td><td>08h – 18h</td></tr>
-                <tr data-day="4"><td>Quinta-feira</td><td>08h – 18h</td></tr>
-                <tr data-day="5"><td>Sexta-feira</td><td>08h – 18h</td></tr>
-                <tr data-day="6"><td>Sábado</td><td>08h – 18h</td></tr>
-                <tr data-day="0"><td>Domingo</td><td>08h – 18h</td></tr>
+                <tr class="hours-row" data-day="1"><td>Segunda-feira</td><td>08h – 18h</td></tr>
+                <tr class="hours-row" data-day="2"><td>Terça-feira</td><td>08h – 18h</td></tr>
+                <tr class="hours-row" data-day="3"><td>Quarta-feira</td><td>08h – 18h</td></tr>
+                <tr class="hours-row" data-day="4"><td>Quinta-feira</td><td>08h – 18h</td></tr>
+                <tr class="hours-row" data-day="5"><td>Sexta-feira</td><td>08h – 18h</td></tr>
+                <tr class="hours-row" data-day="6"><td>Sábado</td><td>08h – 18h</td></tr>
+                <tr class="hours-row" data-day="0"><td>Domingo</td><td>Fechado</td></tr>
               </table>
             </div>
           </div>
-          <a href="#" data-wa-generic class="btn btn--cta btn--block">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
-            Como chegar / Falar no WhatsApp
+          <a href="#" data-wa="generic" class="btn btn-primary btn-block">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
+            Como chegar · Falar no WhatsApp
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== ORÇAMENTO ===================== -->
+  <!-- ORÇAMENTO -->
   <section class="section" id="orcamento">
-    <div class="container" style="max-width:720px">
-      <div class="section-head section-head--center reveal">
-        <span class="eyebrow">Orçamento rápido</span>
-        <h2 class="section-title">Conte o que seu carro precisa</h2>
-        <p class="section-desc">Preencha e enviamos direto pro WhatsApp — sem cadastro.</p>
+    <div class="wrap quote-wrap">
+      <div class="section-head center reveal">
+        <p class="label">Orçamento rápido</p>
+        <h2>Conta o que seu carro precisa.</h2>
+        <p>Preencha e enviamos direto pro WhatsApp — sem cadastro.</p>
       </div>
       <form id="quote-form" class="quote-form reveal">
-        <div class="form-field">
+        <div class="field">
           <label for="q-name">Seu nome</label>
           <input id="q-name" type="text" placeholder="Ex: João Silva" required>
         </div>
-        <div class="form-field">
+        <div class="field">
           <label for="q-vehicle">Veículo (modelo e cor)</label>
           <input id="q-vehicle" type="text" placeholder="Ex: HB20 branco" required>
         </div>
-        <div class="form-field">
+        <div class="field">
           <label for="q-service">Serviço de interesse</label>
           <select id="q-service">
             <option value="">Não sei, quero indicação</option>
@@ -583,30 +546,30 @@
             <option>Serviço para Moto</option>
           </select>
         </div>
-        <div class="form-field">
+        <div class="field">
           <label for="q-note">Observações (opcional)</label>
           <textarea id="q-note" rows="3" placeholder="Algo que devemos saber sobre o carro"></textarea>
         </div>
-        <button type="submit" class="btn btn--cta btn--block btn--lg">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
-          Enviar orçamento pelo WhatsApp
+        <button type="submit" class="btn btn-lime btn-block" style="font-size:1rem;padding:1rem;">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
+          Enviar pelo WhatsApp
         </button>
       </form>
     </div>
   </section>
 
-  <!-- ===================== CTA FINAL ===================== -->
-  <section class="cta-final">
-    <div class="container">
-      <span class="eyebrow" style="justify-content:center;display:flex;">Vamos começar?</span>
-      <h2>Seu carro pode ficar assim hoje mesmo.</h2>
-      <p>Chame a gente no WhatsApp, conte o que precisa e a gente cuida do resto.</p>
-      <div class="cta-final__actions">
-        <a href="#" data-wa-generic class="btn btn--cta btn--lg">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="wrap">
+      <span class="label" style="justify-content:center;">Pronto pra começar?</span>
+      <h2>Seu carro pode ficar assim <span class="accent">hoje mesmo.</span></h2>
+      <p>Chame no WhatsApp, conta o que precisa e a gente cuida do resto.</p>
+      <div class="cta-actions">
+        <a href="#" data-wa="generic" class="btn btn-lime">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
           Falar no WhatsApp
         </a>
-        <a href="https://instagram.com/_turbodetails" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+        <a href="https://instagram.com/_turbodetails" target="_blank" rel="noopener" class="btn btn-outline">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           @_turbodetails
         </a>
@@ -616,55 +579,53 @@
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
+<!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <a href="#topo" class="header__logo">
-          <img src="assets/logo-roxa.jpeg" alt="Turbo Details" class="header__logo-img">
-        </a>
-        <p>Estética automotiva com técnica, cuidado e atenção total a cada detalhe.</p>
-        <div class="footer__social">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#"><img src="assets/logo.jpeg" alt="Turbo Details" style="height:36px;border-radius:8px;"></a>
+        <p>Estética automotiva com técnica, cuidado e atenção a cada detalhe.</p>
+        <div class="footer-social">
           <a href="https://instagram.com/_turbodetails" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           </a>
-          <a href="#" data-wa-generic aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
+          <a href="#" data-wa="generic" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
           </a>
         </div>
       </div>
-      <div class="footer__col">
+      <div class="footer-col">
         <h4>Navegação</h4>
         <ul>
-          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#precos">Preços</a></li>
+          <li><a href="#resultados">Resultados</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
-      <div class="footer__col">
+      <div class="footer-col">
         <h4>Contato</h4>
         <ul>
-          <li>Rua Medeiros Neto, 42 — Centro</li>
-          <li>Jequié - BA, 45203-610</li>
+          <li>Rua Medeiros Neto, 42</li>
+          <li>Centro · Jequié - BA</li>
           <li>(73) 99973-7318</li>
-          <li>Todos os dias, 08h–18h</li>
+          <li>Seg–Sáb · 08h–18h</li>
         </ul>
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>© <span id="current-year"></span> Turbo Details — Estética Automotiva. Todos os direitos reservados.</span>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Turbo Details. Todos os direitos reservados.</span>
       <span>Jequié, Bahia</span>
     </div>
   </div>
 </footer>
 
-<!-- WhatsApp flutuante -->
-<a href="#" data-wa-generic class="wa-float" aria-label="Falar no WhatsApp">
-  <span class="wa-float__ping" aria-hidden="true"></span>
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
+<!-- WA FLUTUANTE -->
+<a href="#" data-wa="generic" class="wa-float" aria-label="WhatsApp">
+  <span class="wa-ping" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.36A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.4 13.4c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.5.12-.12.3-.32.44-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38h-.52c-.18.04-.46.16-.62.34-.16.18-.62.6-.62 1.46s.64 1.7.72 1.82c.08.12 1.3 2.06 3.18 2.86 1.88.8 1.88.54 2.22.5.34-.04 1.1-.44 1.26-.88.16-.44.16-.82.12-.9-.04-.08-.18-.12-.42-.24z"/></svg>
 </a>
 
 <script src="js/main.js"></script>
