@@ -393,7 +393,7 @@ h3 { font-size: 1.15rem; }
 /* ── SERVIÇOS ── */
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border-lite);
   border: 1px solid var(--border-lite);
@@ -453,18 +453,18 @@ h3 { font-size: 1.15rem; }
 
 .price-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .75rem;
 }
 
 .price-card {
   background: var(--bg-card);
   border: 1px solid var(--border-lite);
   border-radius: var(--radius-lg);
-  padding: 1.4rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: .65rem;
+  gap: .5rem;
   transition: border-color .2s, transform .2s;
 }
 .price-card:hover { border-color: var(--border); transform: translateY(-2px); }
@@ -498,7 +498,7 @@ h3 { font-size: 1.15rem; }
 }
 .price-value {
   font-family: var(--font-title);
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 700;
   line-height: 1;
 }
