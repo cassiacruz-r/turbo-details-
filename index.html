@@ -125,7 +125,7 @@
           <div class="section-head">
             <p class="label">Quem somos</p>
             <h2>Detalhismo que faz a diferença.</h2>
-            <p>A Turbo Details nasceu da crença de que estética automotiva de verdade não se faz com pressa. Cada veículo passa por um processo técnico e cuidadoso, sem linha de produção — só dedicação.</p>
+            <p>A Turbo Details nasceu da crença de que estética automotiva de verdade não se faz com pressa. Cada veículo passa por um processo técnico e cuidadoso, sem linha de produção, só dedicação.</p>
           </div>
           <ul class="about-list">
             <li>Atendimento individual, sem terceirização</li>
@@ -144,6 +144,7 @@
       <div class="section-head center reveal">
         <p class="label">Resultados reais</p>
         <h2>Antes <span class="accent">&</span> Depois</h2>
+        <p>Em breve fotos reais dos nossos trabalhos. Enquanto isso, veja o que nossos clientes dizem.</p>
       </div>
       <div class="ba-real stagger">
         <div class="ba-real__item reveal">
@@ -582,5 +583,95 @@
 </a>
 
 <script src="js/main.js"></script>
+
+<!-- COPA DO MUNDO 🇧🇷 -->
+<div id="copa-overlay" style="
+  position:fixed;inset:0;z-index:999;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  background:rgba(0,0,0,.85);
+  backdrop-filter:blur(6px);
+  cursor:pointer;
+">
+  <div id="copa-msg" style="text-align:center;animation:copaIn .6s ease;">
+    <div style="font-size:4rem;margin-bottom:.5rem;">🇧🇷⚽🏆</div>
+    <div style="
+      font-family:'Rajdhani',sans-serif;
+      font-size:clamp(2rem,8vw,4rem);
+      font-weight:700;
+      color:#FFDF00;
+      text-shadow:0 0 30px rgba(255,223,0,.5);
+      line-height:1.1;
+      margin-bottom:.5rem;
+    ">HEXA PRO BRASIL!</div>
+    <div style="font-size:1rem;color:rgba(255,255,255,.6);margin-top:.5rem;">Toque para continuar</div>
+  </div>
+  <canvas id="copa-canvas" style="position:absolute;inset:0;pointer-events:none;width:100%;height:100%;"></canvas>
+</div>
+
+<style>
+@keyframes copaIn { from{opacity:0;transform:scale(.8)} to{opacity:1;transform:scale(1)} }
+</style>
+
+<script>
+(function() {
+  const overlay = document.getElementById('copa-overlay');
+  const canvas  = document.getElementById('copa-canvas');
+  const ctx     = canvas.getContext('2d');
+
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const colors = ['#009C3B','#FFDF00','#FFFFFF','#002776','#00C851'];
+  const pieces = Array.from({length:120}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height - canvas.height,
+    w: Math.random() * 10 + 5,
+    h: Math.random() * 6 + 3,
+    color: colors[Math.floor(Math.random()*colors.length)],
+    vx: (Math.random()-0.5)*4,
+    vy: Math.random()*4+2,
+    angle: Math.random()*360,
+    spin: (Math.random()-0.5)*6,
+    opacity: 1
+  }));
+
+  let frame;
+  function draw() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pieces.forEach(p => {
+      ctx.save();
+      ctx.globalAlpha = p.opacity;
+      ctx.translate(p.x + p.w/2, p.y + p.h/2);
+      ctx.rotate(p.angle * Math.PI/180);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+      ctx.restore();
+      p.x  += p.vx;
+      p.y  += p.vy;
+      p.angle += p.spin;
+      if (p.y > canvas.height) {
+        p.y = -20;
+        p.x = Math.random() * canvas.width;
+      }
+    });
+    frame = requestAnimationFrame(draw);
+  }
+  draw();
+
+  function fechar() {
+    overlay.style.transition = 'opacity .5s';
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+      overlay.remove();
+      cancelAnimationFrame(frame);
+    }, 500);
+  }
+
+  overlay.addEventListener('click', fechar);
+  setTimeout(fechar, 6000); // fecha sozinho em 6 segundos
+})();
+</script>
+
 </body>
 </html>
