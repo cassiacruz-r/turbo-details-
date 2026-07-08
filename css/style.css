@@ -964,3 +964,20 @@ h3 { font-size: 1.15rem; }
 @media (min-width: 768px) {
   .ba-real { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ── CORREÇÃO MOBILE ANTES & DEPOIS ── */
+.ba-real__side img {
+  min-height: 150px;
+  background: var(--bg-card);
+}
+.ba-real__split {
+  min-height: 180px;
+}
+
+/* Fallback quando imagem não carrega */
+.ba-real__side {
+  background: linear-gradient(135deg, var(--bg-card), rgba(124,58,237,.1));
+}
+
+/* ── REDUZIR ESPAÇO ENTRE CARDS E VER TABELA ── */
+.see-all { text-align: center; margin-top: .75rem; }
