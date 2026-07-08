@@ -26,8 +26,9 @@ function checkStatus() {
   const min   = now.getMinutes();
   const time  = hour + min / 60;
 
-  // Aberto: Seg(1)–Sáb(6), 8h–18h
-  const isOpen = day >= 1 && day <= 6 && time >= 8 && time < 18;
+  // Seg–Sex 8h30–17h, Sáb 8h30–15h, Dom fechado
+  const isOpen = (day >= 1 && day <= 5 && time >= 8.5 && time < 17) ||
+                 (day === 6 && time >= 8.5 && time < 15);
 
   const badge = document.getElementById('status-badge');
   const bannerBadge = document.getElementById('status-banner-badge');
@@ -38,10 +39,12 @@ function checkStatus() {
 
   const openNote  = 'Atendemos seg–sáb, das 8h às 18h.';
   const closeNote = day === 0
-    ? 'Hoje é domingo — retornamos na segunda às 8h.'
-    : time < 8
-      ? 'Ainda não abrimos hoje — voltamos às 8h.'
-      : 'Fechamos às 18h — retornamos amanhã às 8h.';
+    ? 'Hoje é domingo — retornamos na segunda às 8h30.'
+    : day === 6 && time >= 15
+      ? 'Fechamos às 15h — retornamos na segunda às 8h30.'
+      : time < 8.5
+        ? 'Ainda não abrimos — abrimos às 8h30.'
+        : 'Fechamos às 17h — retornamos amanhã às 8h30.';
 
   if (badge) {
     badge.className = `status-badge ${isOpen ? 'open' : 'closed'}`;
